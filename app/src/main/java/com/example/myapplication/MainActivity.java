@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -47,7 +48,18 @@ public class MainActivity extends AppCompatActivity {
     private void validateLogin(String username, String password) {
         if(!username.isEmpty() && !password.isEmpty()){
             if(username.equals("admin") && password.equals("admin")){
-                Toast.makeText(MainActivity.this, "Login Successful!", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
+
+                /* this is what passed through intent
+                * Intent is used for relay bundle(s) through activities
+                Intent homeIntent = new Intent(this,HomeActivity.class);
+                homeIntent.putExtra("user_key", username);
+                homeIntent.putExtra("password_key", password);
+                startActivity(homeIntent);
+
+                 */
+
+                startActivity(HomeActivity.getIntent(this,username,password));
             }
             else{
                 Toast.makeText(MainActivity.this, "Invalid username or password!", Toast.LENGTH_LONG).show();
