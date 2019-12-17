@@ -15,4 +15,8 @@ public class MainActivity extends AppCompatActivity {
     public void testMethod(){
 
     }
+
+    public void testMethod2(){
+
+    }
 }
