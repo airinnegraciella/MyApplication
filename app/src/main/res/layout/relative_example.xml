@@ -13,14 +13,14 @@
         android:layout_centerInParent="true"
         >
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/txt_title_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/txt_title_username"
             tools:text="Username" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/edt_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -28,7 +28,7 @@
             android:inputType="textPersonName" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/txt_title_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -36,7 +36,7 @@
             tools:text="Password" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/edt_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -55,7 +55,7 @@
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_sign_in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
